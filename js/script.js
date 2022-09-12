@@ -1,28 +1,24 @@
-// // DOM bilan ishlash
+// DOM amaliyot
 
-// // Old way 
+const box = document.querySelector('.box')
+const buttons = document.querySelectorAll('button')
+const circles = document.querySelectorAll('circle')
+// const wrapper = document.querySelector('wrapper')
+const hearts = document.querySelectorAll('wrapper')
 
-const box = document.getElementById('box');
-console.log(box)
 
-const circles = document.getElementsByClassName('circle');
-console.log(circles)
+box.style.cssText = 'background-color:red; width:200px; height:100px';
 
-const buttons = document.getElementsByTagName('button')[2];
-console.log(buttons)
-// Bu usul eski usul 
-
-// New way
-const hearts = document.querySelectorAll('.heart')
-console.log(hearts)
-
-// querySelectorAll va querySelectorAll farqi birinchisi faqat bitta qiymatni oladi ikkinchisi xoxlagancha qiymat oladi
-
-const heart = wrapper.querySelectorAll('.heart')
-console.log(heart)
+buttons[0].style.width = '50px';
 
 hearts.forEach(function (item){
-console.log(item)
+    item.style.cssText='background-color:yellow; width:100px';
 })
+
+for(let i=0; i<hearts.length; i++){
+    hearts[i].style.backgroundcolor= 'yellow'
+}
+
+
 
 
