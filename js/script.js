@@ -19,6 +19,12 @@ for(let i=0; i<hearts.length; i++){
     hearts[i].style.backgroundcolor= 'yellow'
 }
 
+const btn = document.createElement('button');
+document.body.append(btn);
+
+const mycircle = dacument.createElement('div');
+mycircle.classList.add('circle');
+
 
 
 
